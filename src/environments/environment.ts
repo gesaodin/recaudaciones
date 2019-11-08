@@ -10,4 +10,5 @@
 
 export const environment = {
   production: false,
+  url : "https://10.11.61.122:2608/iaim/api/",
 };

@@ -27,7 +27,7 @@ export class TrafficComponent implements OnDestroy {
 
   trafficChartPoints: number[];
   type = 'month';
-  types = ['week', 'month', 'year'];
+  types = ['week', 'month', 'year']; //selected
   currentTheme: string;
 
   constructor(private themeService: NbThemeService,
@@ -38,11 +38,13 @@ export class TrafficComponent implements OnDestroy {
       this.currentTheme = theme.name;
     });
 
+  
     this.trafficChartService.getTrafficChartData()
       .pipe(takeWhile(() => this.alive))
       .subscribe((data) => {
         this.trafficChartPoints = data;
-      });
+    });
+    
   }
 
   ngOnDestroy() {

@@ -24,6 +24,7 @@ import {
   NbButtonModule,
   NbIconModule,
   NbCardModule,
+  NbTreeGridModule,
   NbSpinnerModule,
 } from '@nebular/theme';
 
@@ -35,8 +36,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
      NotadebitoComponent,
-     LoginComponent
-    
+     LoginComponent    
     ],
   imports: [
     BrowserModule,
@@ -51,9 +51,11 @@ import { FormsModule } from '@angular/forms';
     NbIconModule,
     NbCardModule,
     NbSpinnerModule,
+    NbTreeGridModule,
     FormsModule,
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
+    
     NbDatepickerModule.forRoot(),
     NbDialogModule.forRoot(),
     NbWindowModule.forRoot(),
